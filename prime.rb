@@ -13,7 +13,7 @@ def prime?(n)
       end
       i += 6
     end
-    true
+
   end
-  
+  true
 end
