@@ -1,16 +1,19 @@
-def prime?(number)
-  if number == 2
+def prime?(n)
+  if n <= 1
+    false
+  elsif n <= 3
     true
-  elsif number % 2 == 0 || number < 2
+  elsif n % 2 == 0 || n % 3 == 0
     false
   else
-    i = 2
-    while i*i < number
-      if number % i == 0
+    i = 5
+    while i * i <= n
+      if n % i == 0 || n % (i + 2) == 0
         false
       end
-      i += 1
+      i += 6
     end
+    true
   end
-  true
+  
 end
