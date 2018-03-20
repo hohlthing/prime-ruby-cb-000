@@ -1,7 +1,7 @@
 def prime?(number)
   if number == 2
     true
-  elsif number % 2 == 0 || num < 2
+  elsif number % 2 == 0 || number < 2
     false
   else
     i = 2
